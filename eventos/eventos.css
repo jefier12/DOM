@@ -173,5 +173,61 @@ button:hover {
 }
 
 .error {
-  border: 1px solid red;
+  border: 2px solid red;
+}
+
+select {
+  display: block;
+  width: 90%;
+  padding: 14px;
+  margin: 10px auto;
+  border: solid 1px var(--heavyMetal);
+  outline: none;
+  font-size: 1rem;
+  color: var(--heavyMetal);
+}
+
+.genero {
+  margin: 15px 5px;
+  width: 10%;
+}
+
+.temas {
+  margin: 8px 8px;
+  width: 10%;
+  display: flex;
+}
+
+.politicas {
+  margin: 20px 1px;
+  width: 10%;
+}
+
+.form_radio {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form_politicas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input[type="radio"] {
+  width: 30px;
+}
+.check__inputs {
+  display: flex;
+  align-items: center;
+}
+
+.radio_inputs {
+  display: flex;
+  align-items: center;
+}
+.oculto {
+  display: none;
 }

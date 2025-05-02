@@ -21,36 +21,95 @@
           <h2 class="center">Ingrese su datos de usuario</h2>
           <form action="#">
             <div class="form__control">
-              <input type="text" name="nombre" placeholder="Nombre">
+              <input type="text" name="nombre" placeholder="Nombre" required>
             </div>
+
+
             <div class="form__control">
-              <input type="text" name="apellido" placeholder="Apellido">
+              <input type="text" name="apellido" placeholder="Apellido" required>
             </div>
+
+
             <div class="form__control">
-              <input type="tel" name="telefono" placeholder="Telefono">
+              <input type="tel" name="telefono" placeholder="Telefono" required>
             </div>
+
+
             <div class="form__control">
               <select>
-                <option>Seleccione</option>
+                <option class="oculto">Seleccione</option>
                 <option value="1">Bucaramanga</option>
                 <option value="2">Giron</option>
                 <option value="3">Piedecuesta</option>
                 <option value="4">Floridablanca</option>
               </select>
             </div>
+
+
             <div class="form__control">
-              <input type="number" name="documento" placeholder="Documento">
+              <input type="number" name="documento" placeholder="Documento" required>
             </div>
+
+
             <div class="form__control">
-              <input type="text" name="usuario" placeholder="Usuario">
+              <input type="text" name="usuario" placeholder="Usuario" required>
             </div>
+
+
             <div class="form__control">
-              <input type="password" name="Contrasena" placeholder="Contrasena">
+              <input type="password" name="Contrasena" placeholder="Contrasena" required>
             </div>
-            <div class="form__control">
-              <input type="checkbox" name="politicas" id="politicas" />
+
+            <div class="form__control form_radio">
+
+              <div class="radio_inputs">
+                <input class="genero" type="radio" name="genero" value="mujer">
+                <label for="mujer">MUJER</label>
+              </div>
+
+              <div class="radio_inputs">
+                <input class="genero" type="radio" name="genero" value="hombre">
+                <label for="hombre">HOMBRE</label>
+              </div>
+
+            </div>
+            <br>
+            <div class="form__control form_check ">
+
+              <div class="check__inputs">
+                <input class="temas" type="checkbox" id="codigo1" name="lenguaje1" value="html">
+                <label for="codigo1">HTML</label><br>
+              </div>
+
+              <div class="check__inputs">
+                <input class="temas" type="checkbox" id="codigo2" name="lenguaje2" value="css">
+                <label for="codigo2">CSS</label><br>
+              </div>
+
+              <div class="check__inputs">
+                <input class="temas" type="checkbox" id="codigo3" name="lenguaje3" value="javascript">
+                <label for="codigo3">JAVASCRIPT</label><br>
+              </div>
+
+              <div class="check__inputs">
+                <input class="temas" type="checkbox" id="codigo4" name="lenguaje4" value="phyton">
+                <label for="codigo4">PHYTON</label><br>
+              </div>
+
+              <div class="check__inputs">
+                <input class="temas" type="checkbox" id="codigo5" name="lenguaje5" value="java">
+                <label for="codigo5">JAVA</label><br>
+              </div>
+
+
+            </div>
+
+
+            <div class="form__control form_politicas">
+              <input class="politicas" type="checkbox" name="politicas" id="politicas" />
               <label for="politicas">Politicas</label>
             </div>
+
             <button type="submit" id="btn_validar">Validar</button>
           </form>
         </div>
